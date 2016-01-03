@@ -1,10 +1,10 @@
 package org.llh.test;
+
 /**
- * 描    述:<br/>
- * 作    者:lilianghui<br/>
- * 日    期:2015年8月8日下午1:25:30<br/>
- * 版权所有:idsoy.com<br/>
- * 版    本:V1.0<br/>
+ * 
+ *
+ * @author idsoy
+ * @since 1.0.0
  */
 public class App {
 	

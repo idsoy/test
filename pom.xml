@@ -14,16 +14,6 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-	  <groupId>org.bouncycastle.bcprov</groupId>
-	  <artifactId>bcprov-jdk14-145</artifactId>
-	  <version>1.0</version>
-	</dependency>
-	<dependency>
-	  <groupId>org.llh</groupId>
-	  <artifactId>llh-jar</artifactId>
-	  <version>0.0.1-SNAPSHOT</version>
-	</dependency>
   </dependencies>
   <build>
     <finalName>test</finalName>
