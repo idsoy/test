@@ -1,4 +1,4 @@
-package org.llh.test.init;
+package org.idsoy.test.init;
 
 /**
  * test import

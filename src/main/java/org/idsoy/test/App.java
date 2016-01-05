@@ -1,4 +1,4 @@
-package org.llh.test;
+package org.idsoy.test;
 
 /**
  * 

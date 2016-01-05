@@ -8,6 +8,12 @@
   <name>test Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+  	
+  	<dependency>
+	  <groupId>com.vdurmont</groupId>
+	  <artifactId>emoji-java</artifactId>
+	  <version>2.2.0</version>
+	</dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
