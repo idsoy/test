@@ -14,7 +14,7 @@ public class AccessDataTest {
 
 	private static ZooKeeper zk;
 
-	private static String hosts = "192.168.21.3:2181";
+	private static String hosts = "192.168.21.3:2181,192.168.21.4:2181,192.168.21.5:2181";
 
 	private static final Integer SESSION_TIMEOUT = 5000;
 

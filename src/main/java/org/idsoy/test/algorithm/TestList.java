@@ -7,6 +7,8 @@ public class TestList {
 
 	public static void main(String[] args) {
 		
+		System.out.println(8>>3);
+		
 		Girl girl = new Girl();
 		girl.setName("test");
 		
