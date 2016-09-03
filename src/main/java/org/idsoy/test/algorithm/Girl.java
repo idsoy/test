@@ -9,7 +9,6 @@ public class Girl implements Serializable{
 	private String name;
 	
 	private Integer age;
-
 	public String getName() {
 		return name;
 	}
