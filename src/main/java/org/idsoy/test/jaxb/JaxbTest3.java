@@ -3,6 +3,8 @@ package org.idsoy.test.jaxb;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.xml.bind.JAXBException;
+
 import org.junit.Test;
 
 public class JaxbTest3 {
@@ -29,6 +31,24 @@ public class JaxbTest3 {
 
 		String str = JaxbUtil.convertToXml(country);
 		System.out.println(str);
+	}
+	
+	@Test
+	public void getMessage() {
+		String text = "<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>12345678</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好]]></Content></xml>";
+		
+		Message reciveMessage = JaxbUtil.converyToJavaBean(text, Message.class);
+		
+		Message sendMessage = new Message();
+		sendMessage.setToUserName(reciveMessage.getFromUserName());
+		sendMessage.setFromUserName(reciveMessage.getToUserName());
+		sendMessage.setMsgType("text");
+		sendMessage.setCreateTime(System.currentTimeMillis()/1000);
+		sendMessage.setContent("汪汪汪！");
+		
+		System.out.println(JaxbUtil.convertToXml(sendMessage));
+		System.out.println();
+		
 	}
 
 	/** 

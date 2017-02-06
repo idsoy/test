@@ -32,6 +32,9 @@ public class JaxbUtil {
             Marshaller marshaller = context.createMarshaller();  
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);  
             marshaller.setProperty(Marshaller.JAXB_ENCODING, encoding);  
+            
+            //不展示<xml>头
+    		marshaller.setProperty(Marshaller.JAXB_FRAGMENT, true);
   
             StringWriter writer = new StringWriter();  
             marshaller.marshal(obj, writer);  
