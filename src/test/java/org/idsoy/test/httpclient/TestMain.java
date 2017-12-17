@@ -1,5 +1,5 @@
 package org.idsoy.test.httpclient;
-import java.util.HashMap;  
+import java.util.HashMap;
 import java.util.Map;  
 //对接口进行测试  
 public class TestMain {  
